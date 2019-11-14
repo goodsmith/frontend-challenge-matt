@@ -1,0 +1,31 @@
+.btn {
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:not(.clean) {
+    box-shadow: var(--box-shadow-default);
+    transition: var(--transition-default);
+
+    &:hover {
+      box-shadow: var(--box-shadow-hover);
+    }
+  }
+}
+
+.clean {
+  padding: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  transition: unset;
+}
+
+.light {
+  background-color: var(--light-mode-elements);
+  color: var(--light-mode-text);
+}
+
+.dark {
+  background-color: var(--dark-mode-elements);
+  color: var(--dark-mode-text);
+}
