@@ -64,9 +64,12 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,css}": [
+    "*.{js,jsx}": [
       "pretty-quick --staged",
       "eslint src/ --fix",
+      "git add"
+    ],
+    "*.{css}": [
       "stylelint src/ --fix",
       "git add"
     ]
