@@ -7,6 +7,14 @@
 
   &:hover {
     box-shadow: var(--box-shadow-default);
+
+    &.light {
+      background-color: var(--light-mode-elements);
+    }
+
+    &.dark {
+      background-color: var(--dark-mode-elements);
+    }
   }
 }
 
