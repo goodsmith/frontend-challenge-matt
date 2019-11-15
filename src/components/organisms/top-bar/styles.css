@@ -1,0 +1,41 @@
+.topBar {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  padding: 15px 15px;
+  height: 60px;
+  z-index: 2;
+  box-shadow: var(--box-shadow-default);
+  transition: var(--transition-default);
+  white-space: nowrap;
+
+  @media (--s-viewport) {
+    padding: 15px 8px;
+  }
+
+  @media (--m-viewport) {
+    padding: 15px 30px;
+  }
+
+  &:not(.dark) {
+    background-color: var(--light-mode-background);
+    color: var(--light-mode-text);
+  }
+
+  &.dark {
+    background-color: var(--dark-mode-background);
+    color: var(--dark-mode-text);
+  }
+}
+
+.topBarContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+
+  & > h1 {
+    margin: auto 0;
+  }
+}
