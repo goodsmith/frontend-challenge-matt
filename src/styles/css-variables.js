@@ -14,6 +14,9 @@ const fonts = {
   responsiveRootSize: '14px',
   small: '0.8125rem',
   big: '1.25rem',
+  light: '400',
+  bold: '600',
+  bolder: '800',
 }
 
 const sizes = {
@@ -28,6 +31,9 @@ styles['font-root-responsive'] = fonts.responsiveRootSize
 styles['font-detail-page'] = fonts.rootSize
 styles['font-home-page'] = fonts.small
 styles['font-header'] = fonts.big
+styles['font-light'] = fonts.light
+styles['font-bold'] = fonts.bold
+styles['font-bolder'] = fonts.bolder
 
 // Colors
 styles['dark-mode-elements'] = colors['color-dark-blue']

@@ -1,0 +1,21 @@
+.contentWrapper {
+  width: 100%;
+  height: calc(100% - 142px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+  color: inherit;
+}
+
+.light {
+  background-color: var(--light-mode-elements);
+}
+
+.dark {
+  background-color: var(--dark-mode-elements);
+}
+
+.dataWrapper {
+  margin-top: auto;
+}

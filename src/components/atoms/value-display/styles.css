@@ -1,0 +1,8 @@
+.display {
+  color: inherit;
+  font-weight: var(--font-light);
+
+  & > span {
+    font-weight: var(--font-bold);
+  }
+}

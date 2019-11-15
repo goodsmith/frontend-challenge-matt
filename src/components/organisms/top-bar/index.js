@@ -17,7 +17,7 @@ const TopBar = ({ onToggle, theme }) => (
 
 TopBar.propTypes = {
   onToggle: PropTypes.func.isRequired,
-  theme: PropTypes.string,
+  theme: PropTypes.oneOf(['light', 'dark']),
 }
 
 TopBar.defaultProps = {
