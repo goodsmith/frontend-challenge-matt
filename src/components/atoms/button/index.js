@@ -33,7 +33,7 @@ const Button = ({ href, onClick, type, className, children }) => {
 Button.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(types),
+  type: PropTypes.oneOf(Object.keys(types)),
   className: PropTypes.string,
   children: PropTypes.node,
 }
