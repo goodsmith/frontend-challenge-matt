@@ -3,7 +3,9 @@ const path = require('path')
 const custom = require('../webpack.config.dev.js')
 
 module.exports = async ({ config, mode }) => {
-  const rules = config.module.rules.filter(rule => !rule.test.test('.css'))
+  const rules = config.module.rules
+    .filter(rule => !rule.test.test('.css'))
+    .filter(rule => !rule.test.test('.svg'))
 
   // eslint-disable-next-line no-param-reassign
   config.module.rules = [
@@ -48,6 +50,16 @@ module.exports = async ({ config, mode }) => {
           },
         },
       ],
+    },
+    {
+      test: /\.svg/,
+      issuer: {
+        test: /\.css/,
+      },
+      use: {
+        loader: 'svg-url-loader',
+        options: {},
+      },
     },
   ]
 
