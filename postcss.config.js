@@ -30,7 +30,7 @@ module.exports = {
       importFrom: {
         customMedia: {
           '--s-viewport': `(max-width: ${gridBreakpoints.mobile})`,
-          '--m-viewport': `(max-width: ${gridBreakpoints.desktop})`,
+          '--m-viewport': `(min-width: ${gridBreakpoints.desktop})`,
           '--retina-display': `
           (-webkit-min-device-pixel-ratio: ${gridBreakpoints.retina.minPixelRatio}),
           (min-resolution: ${gridBreakpoints.retina.minResolution})

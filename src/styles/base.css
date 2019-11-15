@@ -7,6 +7,10 @@
 html {
   font-family: var(--font-default);
   font-size: var(--font-root);
+
+  @media (--s-viewport) {
+    font-size: var(--font-root-responsive);
+  }
 }
 
 body {
@@ -26,7 +30,15 @@ ul {
 
 p {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-home-page);
+}
+
+h1 {
+  font-size: var(--font-header);
+}
+
+h2 {
+  font-size: var(--font-root);
 }
 
 button,

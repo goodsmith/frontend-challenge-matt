@@ -53,6 +53,16 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.svg/,
+        issuer: {
+          test: /\.css/,
+        },
+        use: {
+          loader: 'svg-url-loader',
+          options: {},
+        },
+      },
     ],
   },
   resolve: {
@@ -67,6 +77,7 @@ module.exports = {
       _styles: path.resolve(__dirname, 'src', 'styles'),
       _utils: path.resolve(__dirname, 'src', 'utils'),
       _services: path.resolve(__dirname, 'src', 'services'),
+      _context: path.resolve(__dirname, 'src', 'context'),
     },
   },
 }

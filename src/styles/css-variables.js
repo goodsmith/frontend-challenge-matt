@@ -11,17 +11,25 @@ const colors = {
 
 const fonts = {
   rootSize: '16px',
+  responsiveRootSize: '14px',
   small: '0.8125rem',
+  big: '1.25rem',
+}
+
+const sizes = {
+  desktop: '1440px',
+  mobile: '375px',
 }
 
 // Typography
 styles['font-default'] = "'Nunito Sans', sans-serif"
 styles['font-root'] = fonts.rootSize
+styles['font-root-responsive'] = fonts.responsiveRootSize
 styles['font-detail-page'] = fonts.rootSize
 styles['font-home-page'] = fonts.small
+styles['font-header'] = fonts.big
 
 // Colors
-
 styles['dark-mode-elements'] = colors['color-dark-blue']
 styles['dark-mode-background'] = colors['color-very-dark-blue-1']
 styles['light-mode-text'] = colors['color-very-dark-blue-2']
@@ -35,6 +43,11 @@ styles['box-shadow-default'] = ' 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 
 styles['box-shadow-hover'] = '0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)'
 
 // Transitions
-styles['transition-default'] = 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)'
+styles['transition-default'] =
+  'background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)'
+
+// Sizes
+styles['screen-mobile'] = sizes.mobile
+styles['screen-desktop'] = sizes.desktop
 
 module.exports = styles
