@@ -18,11 +18,12 @@ const Card = ({ children, onClick, href, className }) => {
 }
 
 Card.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
 }
 
 Card.defaultProps = {
+  children: undefined,
   className: undefined,
 }
 
