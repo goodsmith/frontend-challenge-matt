@@ -10,7 +10,8 @@
     "build": "webpack --config webpack.config.prod.js",
     "start": "node server.js",
     "dev": "webpack-dev-server --open --hot --host 0.0.0.0 --config webpack.config.dev.js",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "logic": "node ./logic/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
