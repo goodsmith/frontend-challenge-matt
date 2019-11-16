@@ -1,0 +1,12 @@
+.arrowIcon {
+  width: 15px;
+  height: 15px;
+
+  &:not(.dark) {
+    background: no-repeat center url(~_images/icons/arrow-icon.svg);
+  }
+
+  &.dark {
+    background: no-repeat center url(~_images/icons/arrow-icon-dark.svg);
+  }
+}
