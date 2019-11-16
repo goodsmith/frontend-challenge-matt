@@ -1,0 +1,31 @@
+.inputWrapper {
+  display: flex;
+  padding: 10px;
+  width: 50%;
+  max-width: 340px;
+  box-shadow: var(--box-shadow-default);
+  transition: var(--transition-default);
+  border-radius: 5px;
+  font-size: var(--font-root);
+
+  & > input {
+    color: inherit;
+    background-color: transparent;
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  &:not(.dark) {
+    background-color: var(--light-mode-elements);
+    color: var(--light-mode-input);
+  }
+
+  &.dark {
+    background-color: var(--dark-mode-elements);
+    color: var(--dark-mode-text);
+  }
+
+  &:hover {
+    box-shadow: var(--box-shadow-hover);
+  }
+}
