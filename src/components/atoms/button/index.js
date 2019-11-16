@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
+import { Link } from 'react-router-dom'
 
 import styles from './styles.css'
 
@@ -13,9 +14,9 @@ export const types = {
 const Button = ({ href, onClick, type, className, children }) => {
   if (href) {
     return (
-      <a href={href} className={classnames(styles.btn, styles[type], className)}>
+      <Link to={href} className={classnames(styles.btn, styles[type], className)}>
         {children}
-      </a>
+      </Link>
     )
   }
 
