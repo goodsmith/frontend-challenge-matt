@@ -12,8 +12,11 @@ const colors = {
 const fonts = {
   rootSize: '16px',
   responsiveRootSize: '14px',
-  small: '0.8125rem',
-  big: '1.25rem',
+  small: '0.8125em',
+  normal: '1em',
+  big: '1.25em',
+  home: '0.8125rem',
+  detail: '1rem',
   light: '400',
   bold: '600',
   bolder: '800',
@@ -28,9 +31,11 @@ const sizes = {
 styles['font-default'] = "'Nunito Sans', sans-serif"
 styles['font-root'] = fonts.rootSize
 styles['font-root-responsive'] = fonts.responsiveRootSize
-styles['font-detail-page'] = fonts.rootSize
-styles['font-home-page'] = fonts.small
+styles['font-detail-page'] = fonts.detail
+styles['font-home-page'] = fonts.home
 styles['font-header'] = fonts.big
+styles['font-normal'] = fonts.normal
+styles['font-small'] = fonts.small
 styles['font-light'] = fonts.light
 styles['font-bold'] = fonts.bold
 styles['font-bolder'] = fonts.bolder

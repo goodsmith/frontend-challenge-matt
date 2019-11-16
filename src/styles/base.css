@@ -30,15 +30,15 @@ ul {
 
 p,
 h3 {
-  font-size: var(--font-home-page);
+  font-size: var(--font-small);
 }
 
 h1 {
-  font-size: var(--font-header);
+  font-size: var(--font-big);
 }
 
 h2 {
-  font-size: var(--font-root);
+  font-size: var(--font-normal);
 }
 
 button,
