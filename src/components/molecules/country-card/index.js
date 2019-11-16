@@ -9,7 +9,7 @@ import ValueDisplay from '_atoms/value-display'
 import styles from './styles.css'
 
 const CountryCard = ({ population, name, flag, capital, region, alpha2Code, className, theme }) => (
-  <Card className={classnames(className, styles[theme])} href={`/detai/${alpha2Code}`}>
+  <Card className={classnames(className, styles[theme])} href={`/detail/${alpha2Code}`}>
     <Hero src={flag} alt={`Flag of ${name}`} />
     <div className={classnames(styles.contentWrapper)}>
       <h2>{name}</h2>
