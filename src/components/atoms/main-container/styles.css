@@ -1,0 +1,21 @@
+.witwContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 0;
+  overflow-y: scroll;
+  font-size: var(--font-home-page);
+
+  @media (--s-viewport) {
+    padding: 15px;
+  }
+
+  &:not(.dark) {
+    color: var(--light-mode-text);
+    background-color: var(--light-mode-background);
+  }
+
+  &.dark {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-background);
+  }
+}

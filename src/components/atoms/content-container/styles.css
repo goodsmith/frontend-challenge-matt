@@ -1,0 +1,9 @@
+.container {
+  width: 80%;
+  max-width: 1024px;
+  margin: auto;
+
+  @media (--s-viewport) {
+    width: 100%;
+  }
+}
