@@ -1,0 +1,68 @@
+.breadCrumbContainer {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.breadCrumb {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 20px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: var(--font-detail-page);
+}
+
+.detailContainer {
+  display: grid;
+  margin-top: 60px;
+  row-gap: 20px;
+  column-gap: 60px;
+  padding: 20px 0;
+  grid-template-areas: "hero title title" "hero phys pol" "hero borders borders";
+  height: 50vh;
+  font-size: var(--font-detail-page);
+
+  @media (--s-viewport) {
+    margin-top: 15px;
+    grid-template-areas: "hero" "title" "phys" "pol" "borders";
+  }
+}
+
+.detailHero {
+  grid-area: hero;
+  max-width: 40vw;
+  height: unset;
+
+  @media (--s-viewport) {
+    max-width: 100%;
+  }
+}
+
+.detailTitle {
+  grid-area: title;
+}
+
+.physData {
+  grid-area: phys;
+}
+
+.polData {
+  grid-area: pol;
+}
+
+.bordersContainer {
+  grid-area: borders;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.borderButton {
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

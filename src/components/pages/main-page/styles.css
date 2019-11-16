@@ -1,35 +1,3 @@
-.witwContainer {
-  width: 100vw;
-  height: 100vh;
-  padding: 20px 0;
-  overflow-y: scroll;
-
-  @media (--s-viewport) {
-    padding: 15px;
-  }
-
-  &:not(.dark) {
-    color: var(--light-mode-text);
-    background-color: var(--light-mode-background);
-  }
-
-  &.dark {
-    color: var(--dark-mode-text);
-    background-color: var(--dark-mode-background);
-  }
-}
-
-.cardListContainer,
-.filtersContainer {
-  width: 80%;
-  max-width: 1024px;
-  margin: auto;
-
-  @media (--s-viewport) {
-    width: 100%;
-  }
-}
-
 .cardListContainer > div {
   @media (--s-viewport) {
     display: flex;
@@ -38,6 +6,7 @@
 }
 
 .filtersContainer {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
