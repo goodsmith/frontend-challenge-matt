@@ -1,0 +1,12 @@
+.searchIcon {
+  width: 20px;
+  height: 20px;
+
+  &:not(.dark) {
+    background: no-repeat center url(~_images/icons/search-icon.svg);
+  }
+
+  &.dark {
+    background: no-repeat center url(~_images/icons/search-icon-dark.svg);
+  }
+}

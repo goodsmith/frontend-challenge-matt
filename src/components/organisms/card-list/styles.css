@@ -1,13 +1,10 @@
 .cardList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1024px;
-  width: 80%;
-  margin: auto;
 }
 
 .cardItem {
-  margin: 20px 30px;
+  margin: 20px 0;
 }

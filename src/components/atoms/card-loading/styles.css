@@ -1,0 +1,14 @@
+.loading {
+  background-color: "#242424";
+  width: 180px;
+  height: 240px;
+  margin: 20px 0;
+
+  &:not(.dark) {
+    background-color: var(--light-mode-elements);
+  }
+
+  &.dark {
+    background-color: var(--dark-mode-elements);
+  }
+}
