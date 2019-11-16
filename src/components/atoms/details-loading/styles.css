@@ -1,0 +1,55 @@
+.detailContainer {
+  display: grid;
+  margin-top: 60px;
+  row-gap: 20px;
+  column-gap: 60px;
+  padding: 20px 0;
+  grid-template-areas: "hero title" "hero details" "hero borders";
+  height: 50vh;
+  font-size: var(--font-detail-page);
+
+  @media (--s-viewport) {
+    margin-top: 15px;
+    grid-template-areas: "hero" "title" "details" "borders";
+  }
+}
+
+.item {
+  width: 100%;
+  border-radius: 5px;
+
+  &:not(.dark) {
+    background-color: var(--light-mode-elements);
+  }
+
+  &.dark {
+    background-color: var(--dark-mode-elements);
+  }
+}
+
+.hero {
+  height: 28vw;
+  grid-area: hero;
+}
+
+.title {
+  height: 20px;
+  grid-area: title;
+}
+
+.details {
+  height: 100%;
+  grid-area: details;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.detailItem {
+  height: 20px;
+}
+
+.borders {
+  height: 20px;
+  grid-area: borders;
+}

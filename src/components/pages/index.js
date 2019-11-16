@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+import DetailsPage from '_pages/details-page'
+import NotFound from '_pages/not-found'
 import TopBar from '_organisms/top-bar'
 import MainPage from '_pages/main-page'
 import { setTheme, getTheme } from '_utils/store'
@@ -18,7 +21,13 @@ const App = () => {
   return (
     <ThemeContext.Provider value={themeState}>
       <TopBar theme={themeState} onToggle={onToggle} />
-      <MainPage theme={themeState} />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route path="/detail/:code" component={DetailsPage} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     </ThemeContext.Provider>
   )
 }

@@ -12,19 +12,20 @@ export const getCardData = async () => {
   return instance.get(`/all?fields=${fields.join(';')}`)
 }
 
-export const getCountryDetails = async code => {
-  const fields = [
-    'name',
-    'nativeName',
-    'population',
-    'region',
-    'subregion',
-    'capital',
-    'topLevelDomain',
-    'borders',
-    'currencies',
-    'languages',
-  ]
+const defaultFields = [
+  'name',
+  'nativeName',
+  'population',
+  'region',
+  'subregion',
+  'capital',
+  'topLevelDomain',
+  'borders',
+  'currencies',
+  'languages',
+  'flag',
+]
 
+export const getCountryDetails = async (code, fields = defaultFields) => {
   return instance.get(`/alpha/${code}?fields=${fields.join(';')}`)
 }
