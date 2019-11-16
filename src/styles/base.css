@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-default);
+  font-size: var(--font-root);
+
+  @media (--s-viewport) {
+    font-size: var(--font-root-responsive);
+  }
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  bottom: 0;
+  left: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p,
+h3 {
+  font-size: var(--font-small);
+}
+
+h1 {
+  font-size: var(--font-big);
+}
+
+h2 {
+  font-size: var(--font-normal);
+}
+
+button,
+input {
+  margin: 0;
+  outline: none;
+  padding: 0;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

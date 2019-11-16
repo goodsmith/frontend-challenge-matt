@@ -1,0 +1,12 @@
+.cardListContainer > div {
+  @media (--s-viewport) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.filtersContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
