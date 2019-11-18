@@ -29,7 +29,7 @@ const CardList = ({ search, region: filterRegion }) => {
           item =>
             !(filterRegion || search) ||
             ((!filterRegion || item.region === filterRegion) &&
-              (!search || item.name.match(`^${search}.*`)))
+              (!search || item.name.toLowerCase().match(`^${search.toLowerCase()}.*`)))
         )
         .map(({ name, alpha2Code, population, capital, region, flag }) => (
           <CountryCard
